@@ -1,0 +1,8 @@
+{
+  "short_name": "austinti.me",
+  "name": "austinti.me",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#10525c",
+  "background_color": "#303030"
+}
