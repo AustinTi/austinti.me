@@ -51,7 +51,7 @@ function App() {
           </div>
 
           <div className="project">
-            <img src="https://austin-serves-the.yiff.church/i/2q3z8xa4.png" height="100" className="pimg" alt="austinti.me" />
+            <img src="https://austin-serves-the.yiff.church/i/6tlliugp.png" height="100" className="pimg" alt="austinti.me" />
             <p>
               <span><a href="https://github.com/AustinTi/austinti.me" className="App-link"><b><u>austinti.me</u></b></a></span>
               <br />
