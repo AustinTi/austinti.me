@@ -1,26 +1,17 @@
 import React from 'react';
 import './App.css';
-
-const sizing = () => {
-  let vh = window.innerHeight * .01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-}
+import Div100vh from 'react-div-100vh'
 
 function App() {
-  sizing();
-  window.addEventListener("resize", () => {
-    sizing();
-  })
-
   return (
     <div className="App">
       <div className="background" />
-      <div className="first">
+      <Div100vh className="first">
         <h1>bark.</h1>
         <span className="arrow">⇩</span>
-      </div>
+      </Div100vh>
 
-      <div className="second">
+      <Div100vh className="second">
         <div className="text">
 
           <div className="project">
@@ -68,7 +59,7 @@ function App() {
           </a>
           <span><b>-AustinTi :3</b></span>
         </div>
-      </div>
+      </Div100vh>
     </div>
   );
 }
