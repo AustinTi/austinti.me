@@ -1,11 +1,22 @@
 import React from 'react';
 import './App.css';
 
+const sizing = () => {
+  let vh = window.innerHeight * .01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
 function App() {
+  sizing();
+  window.addEventListener("resize", () => {
+    sizing();
+  })
+
   return (
     <div className="App">
+      <div className="background" />
       <div className="first">
-        <h1>bark.</h1>   
+        <h1>bark.</h1>
         <span className="arrow">⇩</span>
       </div>
 
@@ -35,7 +46,7 @@ function App() {
             <p>
               <span><a href="https://github.com/AustinTi/US-Reformed-International" className="App-link"><b><u>United States (Reformed International)</u></b></a></span>
               <br />
-              <span>a sensible version of the US-International keyboard layout for Windows, Mac, and Linux with AltGr dead keys</span>
+              <span>a sensible version of the US-International keyboard layout with AltGr dead keys for Windows, Mac, and Linux.</span>
             </p>
           </div>
 
@@ -44,7 +55,7 @@ function App() {
             <p>
               <span><a href="https://github.com/AustinTi/austinti.me" className="App-link"><b><u>austinti.me</u></b></a></span>
               <br />
-              <span>this very website you are viewing right now</span>
+              <span>the very website you are viewing right now</span>
             </p>
           </div>
 
@@ -53,9 +64,9 @@ function App() {
 
         <div className="foot">
           <a href="https://github.com/AustinTi" className="App-link">
-            <img src="https://raw.githubusercontent.com/github/docs/main/assets/images/site/favicon.png" className="fimg" alt="GitHub" />
-            <span className="ftext"><b><u>-AustinTi :3</u></b></span>
+            <img src="https://raw.githubusercontent.com/github/docs/main/assets/images/site/favicon.png" alt="GitHub" />
           </a>
+          <span><b>-AustinTi :3</b></span>
         </div>
       </div>
     </div>

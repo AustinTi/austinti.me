@@ -2,6 +2,14 @@
   max-width: 100vw;
   height: 100%;
   color: #303030;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  position: fixed;
+  z-index: -1;
   background: linear-gradient(-69deg, #3a1cbb, #2d8f9e, #10525c);
   background-size: 400% 400%;
   background-attachment: fixed;
@@ -12,37 +20,38 @@
 
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
 }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
+    transform: scale(1);
   }
 }
 
 @keyframes Gradient {
   0% {
-  background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
 }
 
@@ -52,6 +61,7 @@
 
 .first {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   position: absolute fixed;
   animation: in 1s ease;
@@ -60,11 +70,11 @@
 @keyframes in {
   from {
     opacity: 0;
-    margin-bottom: -1%;
+    margin-top: -1%;
   }
   to {
     opacity: 1;
-    margin-bottom: 0%;
+    margin-top: 0%;
   }
 }
 
@@ -103,21 +113,16 @@ h1 {
 
 .second {
   text-align: center;
-  align-items: center;
   width: 100%;
   min-height: 100vh;
-  position: relative fixed;
+  min-height: calc(var(--vh, 1vh) * 100);;
   height: auto;
+  position: absolute fixed;
   padding-top: 6vh;
 }
 
 .pimg {
-  padding-right: 5vmin;
-}
-
-.top-text {
-  padding: 3vh;
-  font-size: calc(24px + 2vw);
+  padding-right: 3vmin;
 }
 
 .text {
@@ -147,15 +152,11 @@ a.image-link:focus {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 2vh;
   bottom: 5%;
   text-align: center;
   justify-content: center;
   font-size: calc(6px + 2vh);
-}
-
-.fimg {
-  padding-right: 25px;
 }
