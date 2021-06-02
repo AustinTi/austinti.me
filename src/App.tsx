@@ -37,12 +37,12 @@ function App() {
             <p>
               <span><a href="https://metagrab.austinti.me" className="App-link"><b><u>MetaGrab</u></b></a></span>
               <br />
-              <span>a webapp that grabs Spotify's metadata for any track you'd like</span>
+              <span>a webapp that grabs Spotify's metadata for any track you'd like.</span>
             </p>
           </div>
 
           <div className="project">
-            <img src="https://austin-serves-the.yiff.church/i/qhly0d6v.png" height="75" className="pimg" alt="United States (Reformed International)" />
+            <img src="https://austin-serves-the.yiff.church/i/1lksz7b8.png" height="75" className="pimg" alt="United States (Reformed International)" />
             <p>
               <span><a href="https://github.com/AustinTi/US-Reformed-International" className="App-link"><b><u>United States (Reformed International)</u></b></a></span>
               <br />
@@ -55,7 +55,7 @@ function App() {
             <p>
               <span><a href="https://github.com/AustinTi/austinti.me" className="App-link"><b><u>austinti.me</u></b></a></span>
               <br />
-              <span>the very website you are viewing right now</span>
+              <span>the very website you are viewing right now.</span>
             </p>
           </div>
 
